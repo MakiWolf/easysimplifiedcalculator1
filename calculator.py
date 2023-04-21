@@ -1,3 +1,5 @@
+import calculation_class
+
 number1 = 0
 number2 = 0
 result = 0
@@ -9,13 +11,13 @@ while exit == "0":
 	number2 = input("number2: ")
 	
 	if char == "+":
-		print("result: ", float(number1) + float(number2))	
+		print("result: ", calculation_class.add(number1, number2))	
 	elif char == "-":
-		print("result: ", float(number1) - float(number2))
+		print("result: ", calculation_class.sub(number1, number2))
 	elif char == "*":
-		print("result: ", float(number1) * float(number2))
+		print("result: ", calculation_class.mult(number1, number2))
 	elif char == "/" or char == ":":
-		print("result: ", float(number1) / float(number2))
+		print("result: ", calculation_class.div(number1, number2))
 	else:
 		print("unknown char")
 	exit = "1"
